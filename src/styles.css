@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap");
 
 html {
-  background: url('../assets/background.png') no-repeat center center fixed;
+  background: url("../assets/background.png") no-repeat center center fixed;
   box-sizing: border-box;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -10,9 +10,13 @@ html {
   overflow: hidden;
 }
 
+.custom-cursor {
+  cursor: wait;
+}
+
 body {
   color: yellow;
-  font-family: 'Rubik Microbe', sans-serif;
+  font-family: "Rubik Microbe", sans-serif;
   display: flex;
   justify-content: center;
   height: 100vh;
@@ -68,70 +72,110 @@ h1 {
 
 .pad-red {
   border-top-left-radius: 200px;
-  background-color: red;
+  background: repeating-linear-gradient(
+    45deg,
+    red,
+    pink 10px,
+    red 10px,
+    pink 20px
+  );
+  /* background-color: red; */
 }
 
 .pad-red:hover,
 .pad-red:focus {
   background-color: #ff451a;
   transform: rotate(-5deg);
+  transform: scale(0.9);
+  cursor: pointer;
 }
 
 .pad-red:active,
 .pad-red.activated {
   background-color: #ff5c36;
   transform: translateY(10px);
+  transform: scale(0.7);
 }
 
 .pad-green {
   border-top-right-radius: 200px;
-  background-color: green;
+  /* background-color: green; */
+  background: repeating-linear-gradient(
+    -45deg,
+    green,
+    rgb(220, 255, 167) 10px,
+    green 10px,
+    rgb(220, 255, 167) 20px
+  );
 }
 
 .pad-green:hover,
 .pad-green:focus {
   background-color: #8cc218;
   transform: rotate(5deg);
+  transform: scale(0.9);
+  cursor: pointer;
 }
 
 .pad-green:active,
 .pad-green.activated {
   background-color: #a0ea00;
   transform: translateY(10px);
+  transform: scale(0.7);
 }
 
 .pad-yellow {
   border-bottom-right-radius: 200px;
-  background-color: yellow;
+  /* background-color: yellow; */
+  background: repeating-linear-gradient(
+    45deg,
+    yellow,
+    white 10px,
+    yellow 10px,
+    white 20px
+  );
 }
 
 .pad-yellow:hover,
 .pad-yellow:focus {
   background-color: #ffb900;
   transform: rotate(5deg);
+  transform: scale(0.9);
+  cursor: pointer;
 }
 
 .pad-yellow:active,
 .pad-yellow.activated {
   background-color: #ffca3d;
   transform: translateY(10px);
+  transform: scale(0.7);
 }
 
 .pad-blue {
   border-bottom-left-radius: 200px;
-  background-color: blue;
+  /* background-color: blue; */
+  background: repeating-linear-gradient(
+    -45deg,
+    blue,
+    lightblue 10px,
+    blue 10px,
+    lightblue 20px
+  );
 }
 
 .pad-blue:hover,
 .pad-blue:focus {
   background-color: #139ddd;
   transform: rotate(5deg);
+  transform: scale(0.9);
+  cursor: pointer;
 }
 
 .pad-blue:active,
 .pad-blue.activated {
   background-color: #2bbcff;
   transform: translateY(10px);
+  transform: scale(0.7);
 }
 
 .hidden {
